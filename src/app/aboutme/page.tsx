@@ -1,9 +1,21 @@
-import Link from "next/link";
+import { IconHeader } from "@/components/IconHeader"
+
+
 
 export default function AboutMe(){
     return(
-        <Link href="/">
-            HOME
-        </Link>
+       <div className="h-screen">
+
+        <IconHeader />
+
+        <div>
+            {/*texto e botão */}
+            <div>
+
+            </div>
+            {/*texto e botão */}
+        </div>
+
+       </div>
     )
 }

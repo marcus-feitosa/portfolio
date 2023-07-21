@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Londrina_Outline } from 'next/font/google'
+import NeonButton from '@/components/NeonButton'
 
 const londrina = Londrina_Outline({ subsets: ['latin'], weight: ['400']})
 export default function Home() {
@@ -12,9 +13,7 @@ export default function Home() {
       <h1 className={`${londrina.className} text-6xl`}>Desenvolvedor frontend e mobile</h1>
           <Link href="/aboutme">
           
-            <button className="mt-8 w-80 px-4 py-2 text-neon-pink font-bold rounded-xl border-2 border-neon-pink shadow-neon-pink group hover:border-pink-900 hover:text-zinc-600">
-              Sobre mim!
-            </button>
+              <NeonButton text='Sobre mim!'/>
         
           </Link>
       
