@@ -4,7 +4,7 @@ import { Home, User2, Code2, FileText, Phone} from 'lucide-react';
 export function IconHeader(){
     return(
        
-        <div className="flex justify-center h-screen">
+        <div className="flex justify-center">
             
             <div className="mt-8 flex flex-row gap-2 ">
                 <Link href={"/"} className="text-white   hover:text-zinc-600">
