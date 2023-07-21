@@ -3,6 +3,7 @@ import { IconHeader } from "@/components/IconHeader"
 import ProfileIMG from '@/assets/ProfilePic.svg'
 import Image from "next/image"
 import NeonButton from "@/components/NeonButton"
+import Link from "next/link"
 
 
 
@@ -21,8 +22,11 @@ export default function AboutMe(){
                 como desenvolvedor front-end e mobile. Meu foco está no desenvolvimento de soluções
                 utilizando Kootlin, React Native e React.js, porém, estou sempre aberto a explorar novas 
                 tecnologias!
-            </p>
+            </p>    
+            <Link href="/myprojects">
                 <NeonButton text="Projetos"/>
+            </Link>
+                
             </div>
             {/*texto e botão */}
             <Image src={ProfileIMG} alt="Foto de perfil"/>
