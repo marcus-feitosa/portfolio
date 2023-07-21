@@ -11,6 +11,13 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'homeBackgroundImage':"url(/assets/Prancheta.png)"
+      },
+      colors: {
+        "neon-pink": "#ff8ad2",
+      },
+      boxShadow:{
+        'neon-pink':'0px 0px 30px #ff8ad2',
       },
     },
   },
