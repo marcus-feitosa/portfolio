@@ -1,6 +1,7 @@
 'use client'
 import { IconHeader } from "@/components/IconHeader";
 import WebCarousel from "@/components/WebCarousel";
+import MobileCarousel from "@/components/MobileCarousel";
 import { useState } from "react";
 
 export default function Projects(){
@@ -12,7 +13,7 @@ export default function Projects(){
                 <button onClick={() => setIsMobile(true)}  className={`text-bold ${isMobile ? 'border-b-2 border-neon-pink' : 'border-none'}`}>Mobile</button>
                 <button onClick={() => setIsMobile(false)} className={`text-bold ${isMobile ? 'border-none' : 'border-b-2 border-neon-pink'}`}>Web</button>
             </div>
-            {isMobile ? <text>Mobile</text> : <WebCarousel />}
+            {isMobile ? <MobileCarousel /> : <WebCarousel />}
         </div>
     )
 }
