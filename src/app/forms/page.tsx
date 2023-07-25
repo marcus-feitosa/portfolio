@@ -21,38 +21,32 @@ type SendMessageFromData = z.infer<typeof sendMessageSchemaForm>
 
 export default function ContactForm(){
     
-    const {register, handleSubmit, formState:{errors}, getValues} = useForm<SendMessageFromData>({
+    const {register, handleSubmit, formState:{errors}, getValues, setValue} = useForm<SendMessageFromData>({
         resolver: zodResolver(sendMessageSchemaForm)
     });
 
     
-    const templateParams = {
-        from_name: getValues('nome'),
-        email: getValues('email'),
-        message: getValues('mensagem')
+    async function getTemplateParams(){
+        const templateParams = {
+            from_name: getValues('nome'),
+            email: getValues('email'),
+            message: getValues('mensagem')
+        }
+       await emailjs.send("service_j6cg3k4", "template_dizskgf", templateParams, "gTS-EweYnCD6GOe5g").then(() => toast.success('Enviado com sucesso'))
+
     }
-
-    function sendMesage(data:SendMessageFromData){
-        emailjs.send("service_j6cg3k4", "template_dizskgf", templateParams, "gTS-EweYnCD6GOe5g").then(() => toast.success('Enviado com sucesso'))
-    }
-
-
-       
-        
-
 
     return(
 
         <>
-        
         <IconHeader />
-        <div className="flex flex-row items-center justify-center h-screen gap-2 space-x-96 -mt-16">
-            <form onSubmit={handleSubmit(sendMesage)}>
+        <div className="flex flex-row items-center justify-center h-screen gap-2 space-x-96 ">
+            <form onSubmit={handleSubmit(getTemplateParams)}>
             <div className="flex flex-col gap-6 w-96">
 
             
                 <label className="-mb-4 font-bold">Nome</label>
-                <input type="text" {...register('nome')} className="flex flex-1 w-full p-2 rounded-md bg-transparent border-2 border-neon-pink"/>
+                <input type="text" {...register('nome')}  className="flex flex-1 w-full p-2 rounded-md bg-transparent border-2 border-neon-pink"/>
                 {errors.nome && <span className='-mt-4  text-zinc-300'>{errors.nome.message}</span>}
 
                 <label className="-mb-4 font-bold">E-mail</label>
@@ -61,7 +55,7 @@ export default function ContactForm(){
 
                 <label className="-mb-4 font-bold">Mensagem</label>
                 <div className="h-auto">
-                <textarea {...register('mensagem')} className="no-resize appearance-none block w-full bg-transparent text-white border-2 border-neon-pink rounded py-3 px-4 mb-3 leading-tight h-48 resize-none" id="message"></textarea>
+                <textarea {...register('mensagem')}  className="no-resize appearance-none block w-full bg-transparent text-white border-2 border-neon-pink rounded py-3 px-4 mb-3 leading-tight h-48 resize-none" id="message"></textarea>
                 {errors.mensagem && <span className='-mt-4  text-zinc-300'>{errors.mensagem.message}</span>}
                 </div>
                 
