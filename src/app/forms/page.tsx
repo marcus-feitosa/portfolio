@@ -8,6 +8,7 @@ import NeonButton from '@/components/NeonButton';
 import {z} from 'zod'
 import {zodResolver} from '@hookform/resolvers/zod'
 
+import emailjs from '@emailjs/browser'
 
 const sendMessageSchemaForm = z.object({
     nome: z.string().nonempty('Preencha o nome'),
@@ -20,14 +21,19 @@ type SendMessageFromData = z.infer<typeof sendMessageSchemaForm>
 
 export default function ContactForm(){
     
-    const {register, handleSubmit, formState:{errors}} = useForm<SendMessageFromData>({
+    const {register, handleSubmit, formState:{errors}, getValues} = useForm<SendMessageFromData>({
         resolver: zodResolver(sendMessageSchemaForm)
     });
 
     
+    const templateParams = {
+        from_name: getValues('nome'),
+        email: getValues('email'),
+        message: getValues('mensagem')
+    }
 
-    function sendMesage(data:any){
-        toast.success('Enviado com sucesso')
+    function sendMesage(data:SendMessageFromData){
+        emailjs.send("service_j6cg3k4", "template_dizskgf", templateParams, "gTS-EweYnCD6GOe5g").then(() => toast.success('Enviado com sucesso'))
     }
 
 

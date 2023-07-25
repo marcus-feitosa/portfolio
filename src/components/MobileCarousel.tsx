@@ -31,7 +31,7 @@ import NeonButton from './NeonButton';
 
                 <p className='font-bold text-lg'>Ignite Teams</p>
                 <p className='text-zinc-400'>Junte a galera para jogar!</p>
-                <a href="https://github.com/marcus-feitosa/ignite-teams"><NeonButton text='Acessar repositório'/></a>
+                <a href="https://github.com/marcus-feitosa/ignite-teams"><NeonButton type='button' text='Acessar repositório'/></a>
                
                 </footer>
             </div>
@@ -44,7 +44,7 @@ import NeonButton from './NeonButton';
 
                 <p className='font-bold text-lg'>Daily Diet</p>
                 <p className='text-zinc-400'>Gerencie suas refeições e mantenha a dieta</p>
-                <a href="https://github.com/marcus-feitosa/dailydiet"><NeonButton text='Acessar repositório'/></a>
+                <a href="https://github.com/marcus-feitosa/dailydiet"><NeonButton type='button' text='Acessar repositório'/></a>
                
                 </footer>
             </div>
@@ -56,7 +56,7 @@ import NeonButton from './NeonButton';
 
                 <p className='font-bold text-lg'>Ignite Gym</p>
                 <p className='text-zinc-400'>Tenha seus treinos na palma da mão!</p>
-                <a href="https://github.com/marcus-feitosa/ignitegym"><NeonButton text='Acessar repositório'/></a>
+                <a href="https://github.com/marcus-feitosa/ignitegym"><NeonButton type='button' text='Acessar repositório'/></a>
                
                 </footer>
             </div>
@@ -69,7 +69,7 @@ import NeonButton from './NeonButton';
 
                 <p className='font-bold text-lg'>Marketspace</p>
                 <p className='text-zinc-400'>Compra e venda de itens novos e usados</p>
-                <a href="https://github.com/marcus-feitosa/ufabc-next-web"><NeonButton text='Acessar repositório'/></a>
+                <a href="https://github.com/marcus-feitosa/ufabc-next-web"><NeonButton type='button' text='Acessar repositório'/></a>
                
                 </footer>
             </div>
@@ -81,7 +81,7 @@ import NeonButton from './NeonButton';
 
                 <p className='font-bold text-lg'>To-Do</p>
                 <p className='text-zinc-400'>Gerenciador de Tarefas</p>
-                <a href="https://github.com/marcus-feitosa/to-do-mobile"><NeonButton text='Acessar repositório'/></a>
+                <a href="https://github.com/marcus-feitosa/to-do-mobile"><NeonButton type='button' text='Acessar repositório'/></a>
                
                 </footer>
             </div>
