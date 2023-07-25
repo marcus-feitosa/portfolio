@@ -9,6 +9,7 @@ import {z} from 'zod'
 import {zodResolver} from '@hookform/resolvers/zod'
 
 import emailjs from '@emailjs/browser'
+import SocialMediaIcons from '@/components/SocialMediaIcons';
 
 const sendMessageSchemaForm = z.object({
     nome: z.string().nonempty('Preencha o nome'),
@@ -46,30 +47,25 @@ export default function ContactForm(){
 
             
                 <label className="-mb-4 font-bold">Nome</label>
-                <input type="text" {...register('nome')}  className="flex flex-1 w-full p-2 rounded-md bg-transparent border-2 border-neon-pink"/>
+                <input type="text" placeholder='Digite seu nome' {...register('nome')}  className="flex flex-1 w-full p-2 rounded-md bg-transparent border-2 border-neon-pink"/>
                 {errors.nome && <span className='-mt-4  text-zinc-300'>{errors.nome.message}</span>}
 
                 <label className="-mb-4 font-bold">E-mail</label>
-                <input type="text" {...register('email')} className="flex flex-1 w-full p-2 rounded-md bg-transparent border-2 border-neon-pink"/>
+                <input type="text" placeholder='Digite seu email' {...register('email')} className="flex flex-1 w-full p-2 rounded-md bg-transparent border-2 border-neon-pink"/>
                 {errors.email && <span className='-mt-4  text-zinc-300'>{errors.email.message}</span>}
 
                 <label className="-mb-4 font-bold">Mensagem</label>
                 <div className="h-auto">
-                <textarea {...register('mensagem')}  className="no-resize appearance-none block w-full bg-transparent text-white border-2 border-neon-pink rounded py-3 px-4 mb-3 leading-tight h-48 resize-none" id="message"></textarea>
+                <textarea placeholder='Digite sua mensagem...' {...register('mensagem')}  className="no-resize appearance-none block w-full bg-transparent text-white border-2 border-neon-pink rounded py-3 px-4 mb-3 leading-tight h-48 resize-none" id="message"></textarea>
                 {errors.mensagem && <span className='-mt-4  text-zinc-300'>{errors.mensagem.message}</span>}
                 </div>
                 
-            
-            
-            
-            
-
             </div>
                 <NeonButton text="Enviar mensagem" type='submit'/>
             </form>
-            <div>
-            
+            <div className='flex flex-col items-center gap-2'>
             <p>Redes sociais</p>
+            <SocialMediaIcons />
             </div>
         </div>
         </>
