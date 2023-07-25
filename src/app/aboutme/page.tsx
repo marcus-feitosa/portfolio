@@ -1,3 +1,4 @@
+
 import { IconHeader } from "@/components/IconHeader"
 
 import ProfileIMG from '@/assets/ProfilePic.svg'
@@ -24,7 +25,7 @@ export default function AboutMe(){
                 tecnologias!
             </p>    
             <Link href="/myprojects">
-                <NeonButton text="Projetos"/>
+                <NeonButton type='button' text="Projetos"/>
             </Link>
                 
             </div>

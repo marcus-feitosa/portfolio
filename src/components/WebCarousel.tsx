@@ -29,7 +29,7 @@ import NeonButton from './NeonButton';
 
                 <p className='font-bold text-lg'>Ignite news</p>
                 <p className='text-zinc-400'>Blog com pagamento de assinatura</p>
-                <a href="https://github.com/marcus-feitosa/ignews"><NeonButton text='Acessar repositório'/></a>
+                <a href="https://github.com/marcus-feitosa/ignews"><NeonButton type='button' text='Acessar repositório'/></a>
                
                 </footer>
             </div>
@@ -42,7 +42,7 @@ import NeonButton from './NeonButton';
 
                 <p className='font-bold text-lg'>Ignite Timer</p>
                 <p className='text-zinc-400'>Timer com método Pomodoro</p>
-                <a href="https://github.com/marcus-feitosa/pomodoro-timer"><NeonButton text='Acessar repositório'/></a>
+                <a href="https://github.com/marcus-feitosa/pomodoro-timer"><NeonButton type='button' text='Acessar repositório'/></a>
                
                 </footer>
             </div>
@@ -54,7 +54,7 @@ import NeonButton from './NeonButton';
 
                 <p className='font-bold text-lg'>Ufabc Next</p>
                 <p className='text-zinc-400'>Desenvolvido por alunos, descomplicando a UFABC</p>
-                <a href="https://github.com/marcus-feitosa/ufabc-next-web"><NeonButton text='Acessar repositório'/></a>
+                <a href="https://github.com/marcus-feitosa/ufabc-next-web"><NeonButton type='button' text='Acessar repositório'/></a>
                
                 </footer>
             </div>
@@ -66,7 +66,7 @@ import NeonButton from './NeonButton';
 
                 <p className='font-bold text-lg'>Ignite shop</p>
                 <p className='text-zinc-400'>E-commerce integrado ao stripe</p>
-                <a href="https://github.com/marcus-feitosa/ignite-shop"><NeonButton text='Acessar repositório'/></a>
+                <a href="https://github.com/marcus-feitosa/ignite-shop"><NeonButton type='button' text='Acessar repositório'/></a>
                
                 </footer>
             </div>

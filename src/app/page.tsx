@@ -12,7 +12,7 @@ export default function Home() {
       <h1 className='font-bold text-8xl'>Olá, eu sou o Marcus!</h1>
       <h1 className={`${londrina.className} text-6xl`}>Desenvolvedor frontend e mobile</h1>
           <Link href="/aboutme">
-              <NeonButton text='Sobre mim   !'/>
+              <NeonButton type='button' text='Sobre mim   !'/>
           </Link>
       
     </div>
