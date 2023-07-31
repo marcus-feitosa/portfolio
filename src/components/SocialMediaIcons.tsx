@@ -12,11 +12,11 @@ export default function SocialMediaIcons(){
         <div className="flex justify-center">
             
             <div className="flex flex-row gap-2 ">
-                <Link href={"/"}  className="text-neon-pink hover:text-zinc-600">
+                <Link href={"https://twitter.com/mrcsfts"}  className="text-neon-pink hover:text-zinc-600">
                     <TwitterIcon size={24}/>
                 </Link>
 
-                <Link href={"/aboutme"} className="text-neon-pink  hover:text-zinc-600">
+                <Link href={"https://instagram.com/marcusvf_?igshid=OGQ5ZDc2ODk2ZA=="} className="text-neon-pink  hover:text-zinc-600">
                     <InstagramIcon size={24} />
                 </Link>
 

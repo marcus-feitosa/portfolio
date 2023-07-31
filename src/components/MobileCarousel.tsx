@@ -69,7 +69,7 @@ import NeonButton from './NeonButton';
 
                 <p className='font-bold text-lg'>Marketspace</p>
                 <p className='text-zinc-400'>Compra e venda de itens novos e usados</p>
-                <a href="https://github.com/marcus-feitosa/ufabc-next-web"><NeonButton type='button' text='Acessar repositório'/></a>
+                <a href="https://github.com/marcus-feitosa/marketspace"><NeonButton type='button' text='Acessar repositório'/></a>
                
                 </footer>
             </div>
