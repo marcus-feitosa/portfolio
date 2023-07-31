@@ -21,7 +21,7 @@ export default function AboutMe(){
             <p className="max-w-2xl">
                 Olá, seja muito bem vindo ao meu portifólio! Meu nome é Marcus, tenho 20 anos e atuo 
                 como desenvolvedor front-end e mobile. Meu foco está no desenvolvimento de soluções
-                utilizando Kootlin, React Native e React.js, porém, estou sempre aberto a explorar novas 
+                utilizando React Native e React.js, porém, estou sempre aberto a explorar novas 
                 tecnologias!
             </p>    
             <Link href="/myprojects">

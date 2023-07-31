@@ -6,7 +6,7 @@ import dailydietIMG from '@/assets/mobileImages/dailydiet.svg'
 import igniteteams from '@/assets/mobileImages/igniteteams.svg'
 import marketspaceIMG from '@/assets/mobileImages/marketspace.svg'
 import todoIMG from '@/assets/mobileImages/todo.svg'
-import ignitegymIMG  from '@/assets/mobileImages/ignitegym.svg'
+import ignitegymIMG  from '@/assets/mobileImages/ignitegym.jpg'
 import NeonButton from './NeonButton';
 
 
