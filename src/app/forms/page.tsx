@@ -22,7 +22,7 @@ type SendMessageFromData = z.infer<typeof sendMessageSchemaForm>
 
 export default function ContactForm(){
     
-    const {register, handleSubmit, formState:{errors}, getValues, setValue} = useForm<SendMessageFromData>({
+    const {register, handleSubmit, formState:{errors}, getValues, reset} = useForm<SendMessageFromData>({
         resolver: zodResolver(sendMessageSchemaForm)
     });
 
@@ -34,7 +34,7 @@ export default function ContactForm(){
             message: getValues('mensagem')
         }
        await emailjs.send("service_j6cg3k4", "template_dizskgf", templateParams, "gTS-EweYnCD6GOe5g").then(() => toast.success('Enviado com sucesso'))
-
+       reset()
     }
 
     return(
