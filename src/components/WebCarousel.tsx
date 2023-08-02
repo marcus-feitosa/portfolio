@@ -3,9 +3,9 @@ import 'keen-slider/keen-slider.min.css'
 import Image from 'next/image';
 
 import ignewsIMG from '@/assets/webImages/ignews.jpg'
-import igniteshopIMG from '@/assets/webImages/igniteshop.svg'
+import igniteshopIMG from '@/assets/webImages/igniteshop.jpg'
 import ignitetimerIMG from '@/assets/webImages/igniteTimer.jpg'
-import ufabcnextIMG from '@/assets/webImages/ufabcnext.svg'
+import ufabcnextIMG from '@/assets/webImages/ufabcnext.jpg'
 import NeonButton from './NeonButton';
 
 
