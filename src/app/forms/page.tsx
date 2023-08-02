@@ -10,6 +10,7 @@ import {zodResolver} from '@hookform/resolvers/zod'
 
 import emailjs from '@emailjs/browser'
 import SocialMediaIcons from '@/components/SocialMediaIcons';
+import { useState } from 'react';
 
 const sendMessageSchemaForm = z.object({
     nome: z.string().nonempty('Preencha o nome'),
@@ -26,8 +27,10 @@ export default function ContactForm(){
         resolver: zodResolver(sendMessageSchemaForm)
     });
 
-    
+    const [isLoading, setIsLoading] = useState(false);
+
     async function getTemplateParams(){
+        setIsLoading(true);
         const templateParams = {
             from_name: getValues('nome'),
             email: getValues('email'),
@@ -35,6 +38,7 @@ export default function ContactForm(){
         }
        await emailjs.send("service_j6cg3k4", "template_dizskgf", templateParams, "gTS-EweYnCD6GOe5g").then(() => toast.success('Enviado com sucesso'))
        reset()
+       setIsLoading(false);
     }
 
     return(
@@ -61,7 +65,7 @@ export default function ContactForm(){
                 </div>
                 
             </div>
-                <NeonButton text="Enviar mensagem" type='submit'/>
+                <NeonButton text="Enviar mensagem" type='submit' isDisabled={isLoading}/>
             </form>
             <div className='flex flex-col items-center gap-2'>
             <p>Redes sociais</p>
