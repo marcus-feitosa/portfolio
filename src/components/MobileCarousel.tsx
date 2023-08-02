@@ -2,10 +2,10 @@ import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
 import Image from 'next/image';
 
-import dailydietIMG from '@/assets/mobileImages/dailydiet.svg'
-import igniteteams from '@/assets/mobileImages/igniteteams.svg'
-import marketspaceIMG from '@/assets/mobileImages/marketspace.svg'
-import todoIMG from '@/assets/mobileImages/todo.svg'
+import dailydietIMG from '@/assets/mobileImages/dailydiet.jpg'
+import igniteteams from '@/assets/mobileImages/igniteteams.jpg'
+import marketspaceIMG from '@/assets/mobileImages/marketspace.jpg'
+import todoIMG from '@/assets/mobileImages/todo.jpg'
 import ignitegymIMG  from '@/assets/mobileImages/ignitegym.jpg'
 import NeonButton from './NeonButton';
 
@@ -25,7 +25,7 @@ import NeonButton from './NeonButton';
         <div ref={sliderRef} className="keen-slider mt-8">
             
             <div className="keen-slider__slide">
-            <Image className="rounded-md" src={igniteteams} width={600} height={480} alt="" />
+            <Image className="rounded-md" src={igniteteams} width={600} height={480} alt="" placeholder='blur'/>
 
                 <footer className='flex flex-col items-center justify-center mt-6'>
 
@@ -38,7 +38,7 @@ import NeonButton from './NeonButton';
 
 
             <div className="keen-slider__slide">
-            <Image className="rounded-md" src={dailydietIMG} width={600} height={480} alt="" />
+            <Image className="rounded-md" src={dailydietIMG} width={600} height={480} alt="" placeholder='blur'/>
 
                 <footer className='flex flex-col items-center justify-center mt-6'>
 
@@ -50,7 +50,7 @@ import NeonButton from './NeonButton';
             </div>
 
             <div className="keen-slider__slide">
-            <Image className="rounded-md" src={ignitegymIMG} width={600} height={480} alt="" />
+            <Image className="rounded-md" src={ignitegymIMG} width={600} height={480} alt="" placeholder='blur'/>
 
                 <footer className='flex flex-col items-center justify-center mt-6'>
 
@@ -63,7 +63,7 @@ import NeonButton from './NeonButton';
 
             {/* AINDA FALTA CRIAR O REPOSITÓRIO*/}
             <div className="keen-slider__slide">
-            <Image className="rounded-md" src={marketspaceIMG} width={600} height={480} alt="" />
+            <Image className="rounded-md" src={marketspaceIMG} width={600} height={480} alt="" placeholder='blur'/>
 
                 <footer className='flex flex-col items-center justify-center mt-6'>
 
@@ -75,7 +75,7 @@ import NeonButton from './NeonButton';
             </div>
 
             <div className="keen-slider__slide">
-            <Image className="rounded-md" src={todoIMG} width={600} height={480} alt="" />
+            <Image className="rounded-md" src={todoIMG} width={600} height={480} alt="" placeholder='blur'/>
 
                 <footer className='flex flex-col items-center justify-center mt-6'>
 

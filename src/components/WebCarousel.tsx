@@ -2,9 +2,9 @@ import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
 import Image from 'next/image';
 
-import ignewsIMG from '@/assets/webImages/ignews.svg'
+import ignewsIMG from '@/assets/webImages/ignews.jpg'
 import igniteshopIMG from '@/assets/webImages/igniteshop.svg'
-import ignitetimerIMG from '@/assets/webImages/igniteTimer.svg'
+import ignitetimerIMG from '@/assets/webImages/igniteTimer.jpg'
 import ufabcnextIMG from '@/assets/webImages/ufabcnext.svg'
 import NeonButton from './NeonButton';
 
@@ -23,7 +23,7 @@ import NeonButton from './NeonButton';
     return(
         <div ref={sliderRef} className="keen-slider mt-8">
             <div className="keen-slider__slide">
-            <Image className="rounded-md" src={ignewsIMG} width={600} height={480} alt="" />
+            <Image className="rounded-md" src={ignewsIMG} width={600} height={480} alt="" placeholder='blur'/>
 
                 <footer className='flex flex-col items-center justify-center mt-6'>
 
@@ -36,7 +36,7 @@ import NeonButton from './NeonButton';
 
 
             <div className="keen-slider__slide">
-            <Image className="rounded-md" src={ignitetimerIMG} width={600} height={480} alt="" />
+            <Image className="rounded-md" src={ignitetimerIMG} width={600} height={480} alt="" placeholder='blur'/>
 
                 <footer className='flex flex-col items-center justify-center mt-6'>
 
@@ -48,7 +48,7 @@ import NeonButton from './NeonButton';
             </div>
 
             <div className="keen-slider__slide">
-            <Image className="rounded-md" src={ufabcnextIMG} width={600} height={480} alt="" />
+            <Image className="rounded-md" src={ufabcnextIMG} width={600} height={480} alt="" placeholder='blur'/>
 
                 <footer className='flex flex-col items-center justify-center mt-6'>
 
@@ -60,7 +60,7 @@ import NeonButton from './NeonButton';
             </div>
 
             <div className="keen-slider__slide">
-            <Image className="rounded-md" src={igniteshopIMG} width={600} height={480} alt="" />
+            <Image className="rounded-md" src={igniteshopIMG} width={600} height={480} alt="" placeholder='blur'/>
 
                 <footer className='flex flex-col items-center justify-center mt-6'>
 
