@@ -10,7 +10,7 @@ const roboto = Roboto({ subsets: ['latin'], weight: ['400','700']})
 
 export const metadata: Metadata = {
   title: 'Marcus Feitosa',
-  description: 'Seja bem vindo ao meu portífolio',
+  description: 'Seja bem vindo ao meu portifólio',
 }
 
 export default function RootLayout({
