@@ -19,7 +19,7 @@ export default function AboutMe(){
             <div className="flex flex-col justify-center">
             <p className="text-6xl font-bold mb-4">Sobre mim</p>
             <p className="max-w-2xl">
-                Olá, seja muito bem vindo ao meu portifólio! Meu nome é Marcus, tenho 20 anos e atuo 
+                Olá, seja muito bem vindo ao meu portfólio! Meu nome é Marcus, tenho 20 anos e atuo 
                 como Desenvolvedor de software. Meu foco está no desenvolvimento de soluções
                 utilizando React Native, React.js, Kootlin e Java, porém, estou sempre aberto a explorar novas 
                 tecnologias!
