@@ -29,7 +29,6 @@ export default function AboutMe(){
             </Link>
                 
             </div>
-            {/*texto e botão */}
             <Image src={ProfileIMG} alt="Foto de perfil"/>
         </div>
 

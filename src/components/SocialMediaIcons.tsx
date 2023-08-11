@@ -2,11 +2,9 @@
 
 import Link from "next/link";
 import { GithubIcon, LinkedinIcon, InstagramIcon, TwitterIcon} from 'lucide-react';
-import { usePathname } from "next/navigation";
+
+
 export default function SocialMediaIcons(){
-
-    const pathname = usePathname();
-
     return(
        
         <div className="flex justify-center">
